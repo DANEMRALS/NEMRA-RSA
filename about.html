@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | IWB</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #004488;
+            padding: 15px;
+            text-align: center;
+            animation: slideDown 0.8s ease-in-out;
+        }
+
+        /* Slide-down animation */
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: url('about-banner.jpg') no-repeat center/cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Content Section */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Section Animation */
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease-in-out forwards;
+        }
+
+        /* Fade-up animation */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Core Values Section */
+        .values {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .value-box {
+            background: #fff;
+            width: 45%;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .value-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .value-box h3 {
+            color: #004488;
+        }
+
+        /* CTA Section */
+        .cta {
+            text-align: center;
+            padding: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .cta a {
+            background: #004488;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .cta a:hover {
+            background: #002244;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            animation: slideUp 0.8s ease-in-out;
+        }
+
+        /* Slide-up animation */
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="software tools.html">Software Tools</a>
+        <a href="stakeholders.html">Stakeholders</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <p>About IWB – Innovation in Recycling & Data Protection</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container">
+        <div class="section">
+            <h2>Who We Are</h2>
+            <p>IWB was founded in 2024 with a mission to revolutionize electronic waste recycling and secure data destruction. Led by Kenneth & Shadrack, our company has expanded into Southern Africa, offering innovative solutions to protect data and the environment.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Mission & Vision</h2>
+            <p><strong>Mission:</strong> To provide innovative and sustainable solutions for recycling electronic waste while ensuring secure data destruction.</p>
+            <p><strong>Vision:</strong> To become Africa’s leading e-waste recycler and data security expert.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Core Values</h2>
+            <div class="values">
+                <div class="value-box">
+                    <h3>🌍 Sustainability</h3>
+                    <p>Eco-friendly recycling methods to protect the planet.</p>
+                </div>
+                <div class="value-box">
+                    <h3>🔐 Security</h3>
+                    <p>Data protection that meets industry standards.</p>
+                </div>
+                <div class="value-box">
+                    <h3>⚡ Innovation</h3>
+                    <p>Cutting-edge recycling and recovery technologies.</p>
+                </div>
+                <div class="value-box">
+                    <h3>🤝 Integrity</h3>
+                    <p>Ethical and responsible e-waste management.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Milestones & Achievements</h2>
+            <p>2024: IWB founded with M100,000 capital.</p>
+            <p>2025: Became a leading electronic recycler in Southern Africa.</p>
+            <p>Partnered with international investors and IT firms.</p>
+        </div>
+    </div>
+
+    <!-- Call-to-Action -->
+    <div class="cta">
+        <a href="services.html">Learn More About Our Services</a>
+        <a href="contacts.html">Get in Touch</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 IWB | Follow us on 
+            <a href="https://www.facebook.com/mpitsentt.namane">Facebook</a> | 
+            <a href="https://www.instagram.com/danemra_ls_sanctuary?igsh=YzI2NW0zeXEyYm05">Instagram</a> | 
+            <a href="https://wa.me/message/UDFALKF7X562N1">WhatsApp</a>
+        </p>
+    </footer>
+
+</body>
+</html>

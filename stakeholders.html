@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stakeholders | IWB</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #004488;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #f0a500;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: url('stakeholders-banner.jpg') no-repeat center/cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Content Section */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .stakeholder-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease-in-out forwards;
+        }
+
+        /* Animation Delay for Each Section */
+        .stakeholder-section:nth-child(1) { animation-delay: 0.3s; }
+        .stakeholder-section:nth-child(2) { animation-delay: 0.5s; }
+        .stakeholder-section:nth-child(3) { animation-delay: 0.7s; }
+        .stakeholder-section:nth-child(4) { animation-delay: 0.9s; }
+        .stakeholder-section:nth-child(5) { animation-delay: 1.1s; }
+
+        .stakeholder-section h2 {
+            color: #004488;
+        }
+
+        .stakeholder-section p {
+            font-size: 18px;
+        }
+
+        .stakeholder-section a {
+            color: #004488;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .stakeholder-section a:hover {
+            text-decoration: underline;
+            color: #f0a500;
+        }
+
+        /* Call-to-Action Buttons */
+        .cta-buttons {
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeUp 1s ease-in-out forwards;
+            animation-delay: 1.3s;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            background: #004488;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background: #002244;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="software tools.html">Software Tools</a>
+        <a href="Services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+        <a href="stakeholders.html">Stakeholders</a>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <p>Our Stakeholders: The Pillars of IWB</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        <!-- Founders & Leadership -->
+        <div class="stakeholder-section">
+            <h2>📌 Founders & Leadership</h2>
+            <p><strong>IWB CEO:</strong> <a href="https://www.iwb-usa.com/" target="_blank">www.iwb.com</a></p>
+            <p><strong>CTO & Development Team:</strong> <a href="https://www.ctoandco.com/about-us" target="_blank">www.iwbtech.com</a></p>
+        </div>
+
+        <!-- Investors & Partners -->
+        <div class="stakeholder-section">
+            <h2>💼 Investors & Partners</h2>
+            <p><strong>Lesotho National Development Corporation (LNDC):</strong> <a href="https://www.lndc.org.ls" target="_blank">www.lndc.org.ls</a></p>
+            <p><strong>Standard Lesotho Bank:</strong> <a href="https://www.standardlesothobank.co.ls" target="_blank">www.standardlesothobank.co.ls</a></p>
+        </div>
+
+        <!-- Technology & Software Partners -->
+        <div class="stakeholder-section">
+            <h2>👨‍💻 Technology & Software Partners</h2>
+            <p><strong>Microsoft Azure:</strong> <a href="https://azure.microsoft.com" target="_blank">azure.microsoft.com</a></p>
+            <p><strong>IBM:</strong> <a href="https://www.ibm.com" target="_blank">www.ibm.com</a></p>
+        </div>
+
+        <!-- Clients & Major Users -->
+        <div class="stakeholder-section">
+            <h2>🚀 Clients & Major Users</h2>
+            <p><strong>Vodacom Lesotho:</strong> <a href="https://www.vodacom.co.ls" target="_blank">www.vodacom.co.ls</a></p>
+            <p><strong>Revenue Services Lesotho (RSL):</strong> <a href="https://www.rsl.org.ls/" target="_blank">www.rsl.org.ls</a></p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-buttons">
+            <a href="contacts.html">Partner with Us</a>
+            <a href="services.html">Explore Our Services</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 IWB | Quick Links: 
+            <a href="index.html">Home</a> | 
+            <a href="software tools.html">Software Tools</a> | 
+            <a href="services.html">Services</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="stakeholders.html">Stakeholders</a>
+        </p>
+    </footer>
+
+</body>
+</html>
